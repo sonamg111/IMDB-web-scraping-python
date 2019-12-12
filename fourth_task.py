@@ -8,7 +8,7 @@ def movieApi(movie_url):
         return soup
 # print soup        
 
-def scrape_top_list(url[:5]):
+def scrape_top_list(url):
         details=movieApi(url)
  
         movieDetails={}

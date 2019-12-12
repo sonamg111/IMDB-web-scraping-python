@@ -3,7 +3,7 @@ import requests
 from pprint import pprint
 
 movieUrl = " https://www.imdb.com/india/top-rated-indian-movies/"
-response = requests.get(movie_url)
+response = requests.get(movieUrl)
 soup = BeautifulSoup(response.text,"html.parser")
 title=soup.find('tbody',class_='lister-list')
 trs=title.findAll('tr')

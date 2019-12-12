@@ -28,5 +28,5 @@ def analyse_movies_language(duplicateLanguage,language):
                         if i==j:
                                 allLanguagecount[i]=count
                                 count=count+1
-        pprint (allLanguagecount)        
+        return (allLanguagecount)        
 analyse_movies_language(movies,allLanguage)

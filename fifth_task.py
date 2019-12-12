@@ -5,9 +5,9 @@ def scrape_movie_details(details):
     allMoviesList=[]
     for index in details:
         movie_link=index["url"]
-        movieUrl = scrape_top_list(movie_link)
-        mainMovie = movieUrl.copy()
-        movieUrl.clear()
+        movie_url = scrape_top_list(movie_link)
+        mainMovie = movie_url.copy()
+        movie_url.clear()
         allMoviesList.append(mainMovie)
     return allMoviesList
         

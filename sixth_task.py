@@ -21,12 +21,12 @@ def duplicateList(list1):
 movies=duplicateList(allLanguage) 
 
 def analyse_movies_language(duplicateLanguage,language):
-        allLanguageCount={}
+        allLanguagecount={}
         for i in duplicateLanguage:
                 count=1
                 for j in language:
                         if i==j:
-                                allLanguageCount[i]=count
+                                allLanguagecount[i]=count
                                 count=count+1
-        pprint (allLanguageCount)        
+        pprint (allLanguagecount)        
 analyse_movies_language(movies,allLanguage)

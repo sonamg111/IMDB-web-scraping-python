@@ -11,7 +11,7 @@ def movieApi(movie_url):
 def scrape_top_list(url[:5]):
         details=movieApi(url)
  
-        movie_details={}
+        movieDetails={}
         for i in range(1):
                 try:
                         sum_data=details.find("div",class_="article",id="titleDetails")
@@ -50,15 +50,15 @@ def scrape_top_list(url[:5]):
         for i in runtime:
                 if i.isdigit()==True:
                         runTime=runTime+i
-        movie_details['name']=movie_name[0]
-        movie_details['Directior'] = directorLists 
-        movie_details['Country'] = countryName
-        movie_details['Language'] = languageList
-        movie_details['poster_image_url'] = moviePoster
-        movie_details['bio'] = bio
-        movie_details['runtime'] = runTime
-        movie_details['genre'] = gerneList
-        return (movie_details) 
+        movieDetails['name']=movie_name[0]
+        movieDetails['Directior'] = directorLists 
+        movieDetails['Country'] = countryName
+        movieDetails['Language'] = languageList
+        movieDetails['poster_image_url'] = moviePoster
+        movieDetails['bio'] = bio
+        movieDetails['runtime'] = runTime
+        movieDetails['genre'] = gerneList
+        return (movieDetails) 
 url="https://www.imdb.com/title/tt0986264/"        
 MovieDetails=scrape_top_list(url)
 # pprint (MovieDetails) 

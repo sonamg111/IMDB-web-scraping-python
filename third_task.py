@@ -22,9 +22,9 @@ def group_by_decade(movies):
         module = index % 10
         decade= index-module
         rangeYear=(decade)+10                
-        for i in range(decade,rangeYear):
-                if i in same_group_year:
-                        movieYears.append(same_group_year[i])       
+        for index2 in range(decade,rangeYear):
+                if index2 in same_group_year:
+                        movieYears.append(same_group_year[index2])       
         yearDecade[decade]= movieYears
     return (yearDecade)     
 

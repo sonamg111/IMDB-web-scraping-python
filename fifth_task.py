@@ -10,8 +10,9 @@ def scrape_movie_details(details):
         movie_url.clear()
         allMoviesList.append(mainMovie)
     return allMoviesList
-        
+    
 movies_detail_list = scrape_movie_details(top_movies)
+        
 # pprint (movies_detail_list) 
 
         
